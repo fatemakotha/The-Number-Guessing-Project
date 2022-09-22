@@ -15,6 +15,7 @@ elif question == "hard":
     lives = 5
 print(f"You chose {question} so you have {lives}")
 
+
 guess = int(input("Enter a number from 1 - 100: "))
 
 
@@ -22,7 +23,9 @@ guess = int(input("Enter a number from 1 - 100: "))
 if guess == correct_answer:
     print("You win")
 elif guess > correct_answer:
-    print("Too High")
+    lives -= 1
+    print(f"Too High. You have {lives} left")
     
 elif guess < correct_answer:
-    print("Too Low")
+    lives -= 1
+    print(f"Too Low. You have {lives} left")
