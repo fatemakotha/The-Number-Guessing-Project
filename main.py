@@ -20,9 +20,9 @@ guess = int(input("Enter a number from 1 - 100: "))
 
 
 game_is_over = False
-while not game_is over:
+while not game_is_over:
     if guess == correct_answer:
-        game_is over = True
+        game_is_over = True
         print("You win")
         
     elif guess > correct_answer:
