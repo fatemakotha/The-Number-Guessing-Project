@@ -20,14 +20,15 @@ guess = int(input("Enter a number from 1 - 100: "))
 
 
 game_is_over = False
-
-    
-if guess == correct_answer:
-    print("You win")
-elif guess > correct_answer:
-    lives -= 1
-    print(f"Too High. You have {lives} left")
-    
-elif guess < correct_answer:
-    lives -= 1
-    print(f"Too Low. You have {lives} left")
+while not game_is over:
+    if guess == correct_answer:
+        game_is over = True
+        print("You win")
+        
+    elif guess > correct_answer:
+        lives -= 1
+        print(f"Too High. You have {lives} left")
+        
+    elif guess < correct_answer:
+        lives -= 1
+        print(f"Too Low. You have {lives} left")
