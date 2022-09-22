@@ -16,19 +16,35 @@ elif question == "hard":
 print(f"You chose {question} so you have {lives} lives")
 
 
-guess = int(input("Enter a number from 1 - 100: "))
 
 
 
-# game_is_over = False
-# while not game_is_over:
+
+game_is_over = False
+while not game_is_over:
+    guess = int(input("Enter a number from 1 - 100: "))
     
-if guess == correct_answer:
-    game_is_over = True
-    print("YOU WIN")
-elif guess > correct_answer:
-    print("Too High")
-elif guess < correct_answer:
-    print("Too low")
+    
+    if guess == correct_answer:
+        game_is_over = True
+        print("YOU WIN")
         
+    elif guess > correct_answer:
+        print("Too High")
+        lives -= 1
+        print(lives)
+        if lives == 0:
+            game_is_over = True
+            print("You lost all lives. You lose.")
+        
+    elif guess < correct_answer:
+        print("Too low")
+        lives -= 1
+        print(lives)
+        if lives == 0:
+            game_is_over = True
+            print("You lost all lives. You lose.")
+        
+
+
     
