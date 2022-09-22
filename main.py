@@ -23,25 +23,5 @@ guess = int(input("Enter a number from 1 - 100: "))
 game_is_over = False
 
 while not game_is_over:
-    if guess == correct_answer:
-        game_is_over = True
-        print("You win")
-        
-    if guess > correct_answer:
-        lives -= 1
-        print(f"You have {lives} lives left")
-        guess = int(input("Enter a number from 1 - 100: "))
-        if lives == 0:
-            end_of_game = True
-            print("You lost all lives. You lose.")
-        print(f"Too High. You have {lives} left")
-        
-    if guess < correct_answer:
-        lives -= 1
-        print(f"You have {lives} lives left")
-        guess = int(input("Enter a number from 1 - 100: "))
-        if lives == 0:
-            end_of_game = True
-            print("You lost all lives. You lose.")
-        print(f"Too Low. You have {lives} left")
+    
     
