@@ -23,5 +23,7 @@ guess = int(input("Enter a number from 1 - 100: "))
 game_is_over = False
 
 while not game_is_over:
-    
+    if guess == correct_answer:
+        game_is_over = True
+        print("YOU WIN")
     
