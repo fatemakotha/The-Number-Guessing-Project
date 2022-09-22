@@ -13,7 +13,7 @@ if question == "easy":
     lives = 10
 elif question == "hard":
     lives = 5
-print(f"You chose {question} so you have {lives}")
+print(f"You chose {question} so you have {lives} lives")
 
 
 guess = int(input("Enter a number from 1 - 100: "))
