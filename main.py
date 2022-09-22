@@ -9,6 +9,11 @@ print(type(correct_answer)) #prints: int
 print(f"The correct answer is {correct_answer}")
 
 question = input("Do you want the Easy or the Hard level?")
+if question == "easy":
+    lives = 10
+elif question == "hard":
+    lives = 5
+print(f"You chose {question} so you have {lives}")
 
 guess = int(input("Enter a number from 1 - 100: "))
 
