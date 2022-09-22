@@ -19,7 +19,9 @@ print(f"You chose {question} so you have {lives}")
 guess = int(input("Enter a number from 1 - 100: "))
 
 
+game_is_over = False
 
+    
 if guess == correct_answer:
     print("You win")
 elif guess > correct_answer:
