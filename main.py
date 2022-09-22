@@ -4,8 +4,8 @@ print(logo)
 print("Welcome to The Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
 
-correct_answer = random.randint(1, 101) #picks a random number from 1 - 100
-print(type(correct_answer)) #prints: int
+correct_answer = random.randint(1, 101) #picks a random number from 1 - 100 which in an INTEGER **
+
 print(f"The correct answer is {correct_answer}")
 
 question = input("Do you want the Easy or the Hard level?")
@@ -30,17 +30,19 @@ while not game_is_over:
         print("YOU WIN")
         
     elif guess > correct_answer:
-        print("Too High")
+        print("Too High.")
+        print("Guess again.")
         lives -= 1
-        print(lives)
+        print(f"You have {lives} lives left")
         if lives == 0:
             game_is_over = True
             print("You lost all lives. You lose.")
         
     elif guess < correct_answer:
-        print("Too low")
+        print("Too low.")
+        print("Guess again.")
         lives -= 1
-        print(lives)
+        print(f"You have {lives} lives left")
         if lives == 0:
             game_is_over = True
             print("You lost all lives. You lose.")
