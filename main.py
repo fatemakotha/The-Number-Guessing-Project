@@ -1,5 +1,5 @@
 import random
-import logo from art
+from art import logo
 print(logo)
 print("Welcome to The Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
